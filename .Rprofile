@@ -10,6 +10,7 @@ library(grDevices)
 library(devtools)
 library(dplyr)
 library(ggplot2)
+library(editheme)
 
 ## Load custom functions
 # source("/Users/jgarces/google_drive/bioinformatica/codigos_varios/functionesJuanjo.R")
