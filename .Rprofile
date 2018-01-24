@@ -22,6 +22,9 @@ utils::rc.settings(ipck = TRUE)
 makeActiveBinding("refresh", function() { shell("Rgui"); q("no") }, .GlobalEnv)
 makeActiveBinding("refresh", function() { system("R"); q("no") }, .GlobalEnv) 
 
+## Customize path where packages will be installed
+.libPaths("/mnt/beegfs/jgarces/software/r_packages")
+
 ### Customize functions #######################################################################################
 
 ## Create a new invisible environment for all the functions to go in so it doesn't clutter your workspace.
@@ -105,7 +108,8 @@ attach(.env)
 ### Miscelaneaous ###############################################################################
 
 .First <- function() {
-  cat("Packages loaded: BiocInstaller, grDevices, devtools, dplyr, ggplot2")
+  cat("Using library: ", .libPaths()[1])
+  cat("Packages loaded: BiocInstaller, grDevices, devtools, dplyr, ggplot2, editheme")
   cat("\nSuccessfully loaded .Rprofile at", date(), "\n")
 }
 
