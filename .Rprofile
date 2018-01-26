@@ -105,6 +105,12 @@ makeActiveBinding("refresh", function() { system("R"); q("no") }, .GlobalEnv)
   setdiff(big.vec, unique(duplicates))
 }
 
+## Clean plot panel and re-configure editheme
+.env$cplot <- function(){
+  dev.off()
+  set_base_sty("Idle Fingers")
+}
+
 ## Attach all the variables abov
 attach(.env)
 
