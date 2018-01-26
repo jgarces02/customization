@@ -4,6 +4,12 @@
 # options(prompt = "> ")
 # options(continue = "+ ") 
 
+## Customize library path
+.libPaths("/mnt/beegfs/jgarces/software/r_packages")
+
+## Enable parallelization in install.packages()
+options(Ncpus = 10)
+
 ## Load packages
 library(BiocInstaller)
 library(grDevices)
@@ -21,9 +27,6 @@ utils::rc.settings(ipck = TRUE)
 ## "refresh" will shut down the current session and start up a new one.
 makeActiveBinding("refresh", function() { shell("Rgui"); q("no") }, .GlobalEnv)
 makeActiveBinding("refresh", function() { system("R"); q("no") }, .GlobalEnv) 
-
-## Customize path where packages will be installed
-.libPaths("/mnt/beegfs/jgarces/software/r_packages")
 
 ### Customize functions #######################################################################################
 
