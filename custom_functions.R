@@ -1,5 +1,7 @@
+### Basics ##################################################################################################
 
-## Adding a column and fill empty "cells" with NA values
+
+## Adding a column and fill empty "cells" with NA values (as rbind.fill, from plyr)
 cbind.fill <- function(...){
   nm <- list(...) 
   nm <- lapply(nm, as.matrix)
