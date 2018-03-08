@@ -10,6 +10,8 @@ alias ll="ls -lh"
 alias ..="cd ../"
 alias ...="cd ../../"
 alias sq="squeue"
+alias c="column -t"
+alias count="sort | uniq -c | sort -nr"
 
 # Prompt customization
 export PS1="\[\e[32m\][\[\e[m\]\[\e[32m\]\u\[\e[m\]\[\e[32m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\]\[\e[32m\]]\[\e[m\] \[\e[36m\]\w\[\e[m\] \[\e[36m\]·\[\e[m\] "
