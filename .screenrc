@@ -1,0 +1,4 @@
+#Deactivate "Wuff-Wuff!" message
+vbell on
+vbell_msg ''
+termcapinfo *  vb=:
