@@ -5,3 +5,4 @@ These are my profiles in some daily programs...
   - VIM
   - shell
   - screen
+  - Sublime Text 3 (sublimeText/)
